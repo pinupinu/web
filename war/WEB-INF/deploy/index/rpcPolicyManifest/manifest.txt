@@ -1,0 +1,3 @@
+# Module index
+# RPC service class, partial path of RPC policy file
+th.ac.utcc.satun.client.GreetingService, 760C7BA33019054DD98F543323A9A82C.gwt.rpc
