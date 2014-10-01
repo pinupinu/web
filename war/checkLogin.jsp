@@ -7,8 +7,8 @@
 	
 	//Query DB
 	String dbUsername = "admin";
-	String dbPassword = "admin1234";
-	String dbName = "Sanchai";
+	String dbPassword = "admin";
+	String dbName = "Myadmin";
 	
 	if(strUsername.equals(dbUsername) && strPassword.equals(dbPassword)){
 		out.println("Login successfully");
