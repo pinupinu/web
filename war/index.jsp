@@ -39,7 +39,7 @@
 			<li><a href="about.html" title="About">About</a></li>
 			<li><a href="gallery.html" title="Gallery">Gallery</a></li>
 			<li><a href="blog.html" title="Blog">Blog</a></li>
-			<li><a href="contact-us.html" title="Contact Us">Contact Us</a></li>
+			
 		</ul>
 	</div>
      <ul class="nav navbar-nav navbar-right">
