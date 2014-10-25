@@ -8,17 +8,17 @@
   <!-- Servlets -->
   <servlet>
     <servlet-name>greetServlet</servlet-name>
-    <servlet-class>th.ac.utcc.satun.server.GreetingServiceImpl</servlet-class>
+    <servlet-class>com.web.server.GreetingServiceImpl</servlet-class>
   </servlet>
   
   <servlet-mapping>
     <servlet-name>greetServlet</servlet-name>
-    <url-pattern>/index/greet</url-pattern>
+    <url-pattern>/web/greet</url-pattern>
   </servlet-mapping>
   
   <!-- Default page to serve -->
   <welcome-file-list>
-    <welcome-file>Index.html</welcome-file>
+    <welcome-file>Web.html</welcome-file>
   </welcome-file-list>
 
 </web-app>

@@ -1,2 +1,0 @@
-serviceClass: th.ac.utcc.satun.client.GreetingService
-path: 760C7BA33019054DD98F543323A9A82C.gwt.rpc

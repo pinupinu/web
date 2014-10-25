@@ -1,6 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
  
   <%
+  request.setCharacterEncoding("UTF-8");
   	String getname_ses = (String)session.getAttribute("name_ses");
   
   %>
@@ -8,7 +9,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="Project Description" />
     <meta name="keywords" content="Project Keywords" />
     <title>Dilasag</title>	
@@ -24,12 +25,28 @@
 			});
 		});
 	</script>
+<script>
+var xmlhttp = new XMLHttpRequest();//สร้าง object
+xmlhttp.onreadystatechange=function(){ //จับ event พอเกิด event ให้เรียก functionไม่มีชื่อ
+if(xmlhttp.readyState==4 && xmlhttp.status==200){
+document.getElementById("result").innerHTML = xmlhttp.responseText;//ใช่ domเข้าถึง <div>ผ่าน ID=resultโดยต้องการเปลี่ยนค่าที่ <div>
+}
+}
+var url = "loadtxt.jsp";
+//เปิด connection
+xmlhttp.open("GET",url,true);
+xmlhttp.send();
+
+</script>
+
 </head>
 
 <body>
-
-
+<br>
+<marquee behavior="scroll" scrolldelay="100"><div id="result"></div></marquee>
+<br>
 <div id="header">
+<br>
 	<div class="container">
 		<h1>
 			<a href="index.html" title="Dilasag">เพชรบุรี</a>
@@ -114,10 +131,10 @@
 			<li><a href="blog.html" title="Blog">Blog</a></li>
 			<li><a href="contact-us.html" title="Contact Us">Contact Us</a></li>
 		</ul>
-		
+		<marquee behavior="scroll" scrolldelay="100"><div id="result"></div></marquee>
 	</div>
 </div><!-- // end #fppter -->
-	
+
 	
 </body>
 </html>
