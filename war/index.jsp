@@ -32,7 +32,7 @@ if(xmlhttp.readyState==4 && xmlhttp.status==200){
 document.getElementById("result").innerHTML = xmlhttp.responseText;//ใช่ domเข้าถึง <div>ผ่าน ID=resultโดยต้องการเปลี่ยนค่าที่ <div>
 }
 }
-var url = "loadtxt.jsp";
+var url = "text.txt";
 //เปิด connection
 xmlhttp.open("GET",url,true);
 xmlhttp.send();
