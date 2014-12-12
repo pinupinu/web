@@ -51,17 +51,24 @@ xmlhttp.send();
 <br>
 	<div class="container">
 		<h1>
-			<a href="index.html" title="Dilasag">เพชรบุรี</a>
+			<a href="index.jsp" title="Dilasag">เพชรบุรี</a>
 		</h1>
 		<ul class="menu fr">
-			<li class="active"><a href="index.html" title="Home">Home</a></li>
+			<li class="active"><a href="index.jsp" title="Home">Home</a></li>
 			<li><a href="about.html" title="About">About</a></li>
-			<li><a href="gallery.html" title="Gallery">Gallery</a></li>
-			<li><a href="blog.html" title="Blog">Blog</a></li>
-			
+			<li><a href="gallery.html" title="Gallery">Travel</a></li>
+			<li ><a href="blog.html" title="Blog">Food&Drink</a></li>
 		</ul>
+		
 	</div>
-     <ul class="nav navbar-nav navbar-right">
+    
+</div><!-- // end #header -->
+
+<div id="main">
+
+<div class="container">
+<div>
+ <ul class="nav navbar-nav navbar-right">
             <% if(getname_ses!=null){ %>
             	<li>
                     <a href="#">สวัสดีคุณ&nbsp;<%=getname_ses %></a>
@@ -83,12 +90,7 @@ xmlhttp.send();
           </li>
           <% } %>
       </ul>
-</div><!-- // end #header -->
-
-<div id="main">
-
-<div class="container">
-    
+    </div>
 		<div id="slideshow">
         
 			<img src="images/slideshow/product1.jpg" alt="Slideshow Image" width="530" height="368" align="middle" />
@@ -110,19 +112,8 @@ xmlhttp.send();
 	</div>
 </div><!-- // end #main -->
 
-<div id="footer">
-	<div class="container">
-		<ul class="menu fl">
-			<li class="active"><a href="index.html" title="Home">Home</a></li>
-			<li><a href="about.html" title="About">About</a></li>
-			<li><a href="gallery.html" title="Gallery">Gallery</a></li>
-			<li><a href="blog.html" title="Blog">Blog</a></li>
-			<li><a href="contact-us.html" title="Contact Us">Contact Us</a></li>
-		</ul>
-		<marquee behavior="scroll" scrolldelay="100"><div id="result"></div></marquee>
-	</div>
-</div><!-- // end #fppter -->
 
+<marquee behavior="scroll" scrolldelay="100"><div id="result"></div></marquee>
 	
 </body>
 </html>
